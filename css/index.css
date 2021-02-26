@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  font-family: cursive;
+  font-size: 1rem;
+  background-color: #555;
+}
+
+header {
+  width: 100%;
+  margin: 0px auto 32px auto;
+  background-color: darkcyan;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: cursive;
+}
+
+header h1 {
+  font-size: 35px;
+}
+h6 {
+  color: red;
+  font-size: 15px;
+}
+.container {
+  width: 60%;
+  margin: auto;
+  background-color: lightskyblue;
+  padding: 45px;
+}
+section {
+  margin-left: -30px;
+  margin-right: 70px;
+}
+section h2 {
+  font-size: 3em;
+  display: block;
+  padding-bottom: 0.5em;
+  border-bottom: 1.5px solid lemonchiffon;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 0.5em;
+  table-layout: fixed;
+}
+
+td,
+th {
+  padding: 13px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
+  background-color: #eee;
+}
+
+label {
+  color: #555;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.campo {
+  padding-bottom: 1em;
+  border: 1px solid #ccc;
+  padding: 14px;
+  width: 100%;
+}
+
+.grupo {
+  width: 32%;
+  display: inline-block;
+  padding: 10px 0px;
+  margin-right: 10px;
+}
+
+#filtrar-tabela {
+  width: 20%;
+  height: 35px;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 16px;
+  border: 2px solid black;
+  cursor: pointer;
+  color: #fff;
+  background-color: #0c8cd3;
+  position: absolute;
+  width: 142px;
+  padding: 12px 20px 12px 20px;
+  margin: 36px;
+}
+button:hover {
+  color: #0c8cd3;
+  background-color: white;
+}
+
+.remover-cliente {
+  font-size: 16px;
+  border: 2px solid black;
+  cursor: pointer;
+  color: #fff;
+  background-color: tomato;
+  position: absolute;
+  right: 26%;
+  width: 142px;
+  padding: 12px 20px 12px 20px;
+  margin: 25px;
+}
+.btn-excluir:hover {
+  color: tomato;
+  background-color: white;
+}
+
+#mensagens-erro {
+  color: red;
+}
+
+.background-branco {
+  background-color: whitesmoke;
+}
+
+.info-checkbox {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  margin-top: 2px;
+}
+
+.imc-imagem {
+  margin: auto;
+  margin-top: 70px;
+  margin-left: 15%;
+  max-width: 70%;
+}
+.titulo-imagem {
+  font-size: 30px;
+  margin-top: -10rem;
+  padding: 5px 0 5px 0;
+  text-align: center;
+}
+.fadeOut {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+/* media query */
+@media (max-width: 1400px) {
+  th {
+    font-size: 10px;
+  }
+} ;

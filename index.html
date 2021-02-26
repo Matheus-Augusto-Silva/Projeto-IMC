@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tabela de Imc</title>
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Tabela De Imc</h1>
+      </div>
+    </header>
+    <section class="container">
+      <section>
+        <h2 id="titulo-form">Adicionar novo Cliente</h2>
+        <ul id="mensagens-erro"></ul>
+
+        <form id="formulario-adiciona">
+          <div class="grupo">
+            <label for="nome">Nome:</label>
+            <input
+              id="nome"
+              name="nome"
+              type="text"
+              placeholder="digite o nome do seu cliente"
+              class="campo"
+            />
+          </div>
+          <div class="grupo">
+            <label for="peso">Peso:</label>
+            <input
+              id="peso"
+              name="peso"
+              type="text"
+              placeholder="digite o peso do seu cliente"
+              class="campo campo-medio"
+            />
+          </div>
+          <div class="grupo">
+            <label for="altura">Altura:</label>
+            <input
+              id="altura"
+              name="altura"
+              type="text"
+              placeholder="digite a altura do seu cliente"
+              class="campo campo-medio"
+            />
+          </div>
+          <div class="grupo">
+            <label for="gordura">% de Gordura:</label>
+            <input
+              id="gordura"
+              type="text"
+              placeholder="digite a porcentagem de gordura do seu cliente"
+              class="campo campo-medio"
+            />
+          </div>
+
+          <button id="adicionar-cliente" class="botao bto-principal">
+            Adicionar
+          </button>
+        </form>
+        <br /><br />
+      </section>
+
+      <section>
+        <h2>Meus clientes</h2>
+        <table>
+          <h6>Obs: Duplo clique no cliente o remove</h6>
+          <br />
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Peso(kg)</th>
+              <th>Altura(m)</th>
+              <th>Gordura Corporal(%)</th>
+              <th>IMC</th>
+            </tr>
+          </thead>
+
+          <tbody id="tabela-clientes"></tbody>
+        </table>
+      </section>
+      <br /><br /><br /><br />
+
+      <!-- <button class=remover-cliente>Excluir</button>-->
+      <br /><br /><br /><br /><br /><br /><br /><br />
+
+      <p class="titulo-imagem">Como está seu peso por Imc:</p>
+      <div class="tabela-imc">
+        <img class="imc-imagem" src="img/imc-media.png" alt="imc-imagem" />
+      </div>
+    </section>
+  </body>
+  <script src="js/removerCliente.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/condicoesClienteValido.js"></script>
+</html>
